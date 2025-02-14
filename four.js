@@ -36,5 +36,8 @@ for (let i = 0; i<=10; i++) {
     if(i === 4) {
         continue;
     }
+    if (i === 8) {
+        break;
+    }
     console.log(`Номер итерации ${i}`)
 }
