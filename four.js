@@ -41,3 +41,19 @@ for (let i = 0; i<=10; i++) {
     }
     console.log(`Номер итерации ${i}`)
 }
+
+
+
+let typeofdog = 1;
+let typeofdogstr;
+switch (typeofdog) {
+    case 1:
+        typeofdogstr = 'прав';
+    case 2:
+        typeofdogstr = 'лев';
+    case 3:
+        typeofdogstr = 'пингвин';
+    case 4:
+        typeofdogstr = 'аист'
+}
+console.log(typeofdogstr)
