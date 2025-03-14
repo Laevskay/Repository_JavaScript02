@@ -33,12 +33,31 @@ function showMeBirthday(print) {
 showMeBirthday(formatDate)
 
 let events = [
-    {title: 'Первый полет человека в космос', year: 1961, month: 4, day: 12};
-    {title: 'День основания клуба', year: 1961, month: 10, day: 15};
-    {title: 'День победы', year: 1945, month: 5, day: 9};
-    {title: 'Отмена крепостного права', year: 1861, month: 1, day: 19};
+    {title: 'Первый полет человека в космос', year: 1961, month: 4, day: 12},
+    {title: 'День основания клуба', year: 1961, month: 10, day: 15},
+    {title: 'День победы', year: 1945, month: 5, day: 9},
+    {title: 'Отмена крепостного права', year: 1861, month: 1, day: 19}
 ]
 
-for (let i = 0; i < events.length; i++) {
-    
+function iterete(array, action) {
+    for (let i = 0; i < array.length; i++) {
+        action(array[i])
+    }
 }
+
+function showTitle(ev) {
+    let date = formatDate(ev.year, ev.month, ev.day)
+    console.log(`${ev.title} -- ${date}`)
+}
+
+iterate(events,showTitle)
+events.forEach(showTitle)
+
+events.forEach((x) => console.log(x.title));
+
+let nums = [1, 2, 3];
+nums.forEach((x, y, z) => {
+    console.log(x);
+    console.log(y);
+    console.log(z);
+})
