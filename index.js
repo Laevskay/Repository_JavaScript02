@@ -21,3 +21,12 @@ function crud() {
 
 const btn = document.getElementById('btn_click')
 btn.onclick=crud
+
+function addNewTask() {
+    //1. Получить инпут
+    const inp = document.getElementById('input_title');
+    console.log(inp.value)
+
+}
+const btn = document.getElementById('btn_click')
+btn.onclick = addNewTask
